@@ -10,7 +10,7 @@ First, add a **copy step** to your build process (to run **AFTER** the build ste
 
 Then you add a script step to run after the copy step.
 
-This step uses PlistBuddy (provided with Apple’s Xcode install) to add an ATSApplicationFontsPath option to the newly built app’s `Info.plist` file.
+This step uses **PlistBuddy** (provided with Apple’s Xcode install) to add an `ATSApplicationFontsPath` option to the newly built app’s `Info.plist` file.
 
     var path as String = CurrentBuildLocation + "/" + CurrentBuildAppName.ReplaceAll( " ", "\ " )
     var result as String = DoShellCommand( "/usr/libexec/PlistBuddy -c ""Add ::ATSApplicationFontsPath string Fonts/"" " + path + ".app/Contents/Info.plist" )
