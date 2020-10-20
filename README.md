@@ -26,6 +26,17 @@ Now when you run your app, it has access to any fonts that are in that folder.
 
 The simple project file uses the demo font in the `Paint` event of the main app window to draw some text. Nothing terribly elaborate or clever. But this technique comes in to its own when including dingbats or other symbol or special fonts and then referencing them from within your app.
 
+    Sub Paint(g As Graphics, areas() As REALbasic.Rect) Handles Paint
+
+        g.FontName = "ChicagoFLF"
+  
+        g.FontSize = 72
+  
+        g.DrawText( "Hello!", ( g.Width - g.TextWidth( "Hello!" ) ) / 2, g.Height / 2 )
+  
+    End Sub
+
+
 The demo font included with the project is "ChicagoFLF", which is a public domain font, created and made available by Robin Casady, based on the original Apple Chicago system typeface designed by Susan Kare.
 
 https://fontlibrary.org/en/font/chicagoflf
