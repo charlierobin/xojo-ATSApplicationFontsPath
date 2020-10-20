@@ -10,7 +10,7 @@ First, add a **copy step** to your build process (to run **AFTER** the build ste
 
 Then you add a script step to run after the copy step.
 
-This step uses PlistBuddy (provided with Apple’s Xcode install) to add an ATSApplicationFontsPath option to the newly built app’s Info.plist file.
+This step uses PlistBuddy (provided with Apple’s Xcode install) to add an ATSApplicationFontsPath option to the newly built app’s `Info.plist` file.
 
     var path as String = CurrentBuildLocation + "/" + CurrentBuildAppName.ReplaceAll( " ", "\ " )
     var result as String = DoShellCommand( "/usr/libexec/PlistBuddy -c ""Add ::ATSApplicationFontsPath string Fonts/"" " + path + ".app/Contents/Info.plist" )
@@ -32,4 +32,6 @@ https://fontlibrary.org/en/font/chicagoflf
 
 https://en.wikipedia.org/wiki/Chicago_(typeface)
 
-Note that **PlistBuddy** must be installed on your computer. The easiest way to achieve this is to simply install XCode.
+Note that **PlistBuddy** must be installed on your computer. The easiest way to achieve this is to simply install Xcode.
+
+But at the end of the day, the `Info.plist` file is just text, so there would be plenty of other ways of doing the same thing ...
