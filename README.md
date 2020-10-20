@@ -24,7 +24,7 @@ You pass this in to **PlistBuddy**, specifying the Fonts subdirectory.
 
 Now when you run your app, it has access to any fonts that are in that folder.
 
-The simple project file uses the demo font in the `Paint` event of the main app window to draw some text. Nothing terribly elaborate or clever. But this technique comes in to its own when including dingbats or other symbol or other special fonts and then referencing them from within your app.
+The simple project file uses the demo font in the `Paint` event of the main app window to draw some text. Nothing terribly elaborate or clever. But this technique comes in to its own when including dingbats or other symbol or special fonts and then referencing them from within your app.
 
 The demo font included with the project is "ChicagoFLF", which is a public domain font, created and made available by Robin Casady, based on the original Apple Chicago system typeface designed by Susan Kare.
 
