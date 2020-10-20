@@ -38,7 +38,7 @@ The simple project file uses the demo font in the `Paint` event of the main app 
   
     End Sub
     
-(The only slight wrinkle is that sometimes you have to experiment to find the correct name of the font. Or just install on it your system, use FontBook, and then test it out in Xojo directly. Then uninstall it again.)
+(The only slight wrinkle is that sometimes you have to experiment to find the correct name of the font. Or just install on it your system, use **FontBook**, and test it out in Xojo directly. And then uninstall it once more.)
 
 The demo font included with the project is "ChicagoFLF", which is a public domain font, created and made available by Robin Casady, based on the original Apple Chicago system typeface designed by Susan Kare.
 
