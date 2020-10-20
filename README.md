@@ -13,7 +13,9 @@ Then you add a script step to run after the copy step.
 This step uses **PlistBuddy** (provided with Apple’s Xcode install) to add an `ATSApplicationFontsPath` option to the newly built app’s `Info.plist` file.
 
     var path as String = CurrentBuildLocation + "/" + CurrentBuildAppName.ReplaceAll( " ", "\ " )
+    
     var result as String = DoShellCommand( "/usr/libexec/PlistBuddy -c ""Add ::ATSApplicationFontsPath string Fonts/"" " + path + ".app/Contents/Info.plist" )
+    
     if result <> "" then print( result )
 
 As you can see, error checking is pretty minimal.
