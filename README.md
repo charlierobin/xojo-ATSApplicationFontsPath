@@ -2,6 +2,8 @@
 
 You can use fonts in your app that are not installed on the user’s system, with no need to require the user to install them manually (or for them to be installed at all).
 
+https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/GeneralPurposeKeys.html#//apple_ref/doc/uid/TP40009253-SW8
+
 https://developer.apple.com/documentation/bundleresources/information_property_list/atsapplicationfontspath
 
 First, add a copy step to your build process (to run AFTER the build step) and copy the font files into your app’s Resources directory. (I like to have a "Fonts" subdirectory within the Resources directory, but it’s not essental.)
